@@ -11,17 +11,15 @@ def generate_users():
 
 def print_data(message, user):
     """print user detail in formated way"""
-    print(
-        f"{message}: {user['name']}, {user['description']}, from {user['country']}"
-    )
+    print(f"{message}: {user['name']}, {user['description']}, from {user['country']}")
 
 
 def user_choice(user1, user2):
     """Take user chice and check it if is A or B"""
     choice = input("Who has more followers? Type 'A' or 'B':").upper()
-    if (choice == 'A'):
+    if choice == "A":
         return user1
-    elif (choice == 'B'):
+    elif choice == "B":
         return user2
 
 
@@ -31,19 +29,19 @@ answer = True
 
 def compare_choice(user1, user2, choice):
     """check the user answer and check if it is wrong or right"""
-    if (user1['follower_count'] > user2['follower_count']):
+    if user1["follower_count"] > user2["follower_count"]:
         max = user1
-    elif (user2['follower_count'] > user1['follower_count']):
+    elif user2["follower_count"] > user1["follower_count"]:
         max = user2
-    if (max == choice):
+    if max == choice:
         return True
     else:
         return False
 
 
-def score_increaser(answer, score): 
+def score_increaser(answer, score):
     """Increase the score and print score"""
-    if (answer == True):
+    if answer == True:
         score += 1
         print(f"You're Wrong! Current score:{score}")
     else:
