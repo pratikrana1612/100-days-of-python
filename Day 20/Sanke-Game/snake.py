@@ -1,10 +1,11 @@
 from turtle import Screen, Turtle
 
 DISTANCE_COVER = 20
-UP=90
-DOWN=270
-LEFT=180
-RIGHT=0
+UP = 90
+DOWN = 270
+LEFT = 180
+RIGHT = 0
+
 
 class Snake:
     def __init__(self):
@@ -30,17 +31,17 @@ class Snake:
         self.turtles[0].forward(DISTANCE_COVER)
 
     def snake_up(self):
-        if self.turtles[0].heading()!=DOWN:
+        if self.turtles[0].heading() != DOWN:
             self.turtles[0].setheading(90)
 
     def snake_down(self):
-        if self.turtles[0].heading()!=UP:
+        if self.turtles[0].heading() != UP:
             self.turtles[0].setheading(270)
 
     def snake_left(self):
-        if self.turtles[0].heading()!=RIGHT:
+        if self.turtles[0].heading() != RIGHT:
             self.turtles[0].setheading(180)
 
     def snake_right(self):
-        if self.turtles[0].heading()!=RIGHT:
+        if self.turtles[0].heading() != RIGHT:
             self.turtles[0].setheading(0)
