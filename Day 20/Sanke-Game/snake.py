@@ -15,12 +15,19 @@ class Snake:
     def create(self):
         x_cordinate = 0
         for _ in range(3):
-            new_turtle = Turtle('square')
-            new_turtle.color('white')
-            new_turtle.penup()
-            new_turtle.goto(x_cordinate, 0)
-            self.turtles.append(new_turtle)
+            self.add_new_turtle((x_cordinate,0))
             x_cordinate -= 20
+
+    def add_new_turtle(self, position):
+        new_turtle = Turtle('square')
+        new_turtle.color('white')
+        new_turtle.penup()
+        new_turtle.goto(position)
+        self.turtles.append(new_turtle)
+    def hack(self):
+        self.extend()
+    def extend(self):
+        self.add_new_turtle(self.turtles[-1].pos())
 
     def move(self):
         for i in range(len(self.turtles)-1, 0, -1):
