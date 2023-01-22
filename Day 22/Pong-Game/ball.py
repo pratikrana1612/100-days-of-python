@@ -9,6 +9,7 @@ class Ball(Turtle):
         # self.shape('circle')
         self.setheading(0)
         self.move()
+        self.movement=0.1
 
 
     def move(self):
@@ -16,4 +17,11 @@ class Ball(Turtle):
 
     def change_direction(self,degree):
         self.setheading(degree)
+    
+    def change_moment(self):
+        self.movement*=0.9
 
+    def reset(self,degree):
+        self.goto(0,0)
+        self.movement=0.1
+        self.change_direction(degree)
