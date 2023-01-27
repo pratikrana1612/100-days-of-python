@@ -9,7 +9,7 @@ for n in numbers:
 new_list = [n + 1 for n in numbers]
 
 #String as List
-name = "Angela"
+name = "Angela"                                                                                                                                                                                 
 letters_list = [letter for letter in name]
 
 #Range as List
@@ -27,21 +27,27 @@ student_grades = {name: random.randint(1, 100) for name in names}
 print(student_grades)
 
 passed_students = {
-    student: grade
+    student: [grade]
     for (student, grade) in student_grades.items() if grade >= 60
 }
-print(f'********{passed_students}***********')
+# print(f{passed_students})
+temp={
+    "Students":["pratik","Rohan","Varun"],
+    "marks":[23,43,23]
+}
 
 # for (key,value) in passed_students.items():
-#     print(f'********{value}***********')
+#     print(f{value})
 
 import pandas
-passed_students_dataframe=pandas.DataFrame(passed_students)
-for (key,value) in passed_students_dataframe.items():
-    print(f'********{key}***********')
+passed_students_dataframe=pandas.DataFrame(temp)
+print(passed_students_dataframe)
+# for (key,value) in passed_students_dataframe.items():
+#     print(key)
 
 
-# Loop through rows of data frame
+# # Loop through rows of data frame
 for (index,row) in passed_students_dataframe.iterrows():
-    # print(index)
-    print(row.score)
+    if(row.Students=='pratik'):
+        print(row)
+    # print(row.score)
