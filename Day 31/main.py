@@ -2,34 +2,33 @@ import pandas
 from tkinter import *
 from random import choice
 BACKGROUND_COLOR = "#B1DDC6"
-
-
+try:
+    data = pandas.read_csv('data/words_to_learn.csv')
+except FileNotFoundError:
+    data = pandas.read_csv('data/french_words.csv')
+to_learn = data.to_dict(orient='records')
+dic = choice(to_learn)
 # print(data)
 
+
 def yes_button_handler():
-    word_changer(True)
+    to_learn.remove(dic)
+    # print(len(to_learn))
+    data = pandas.DataFrame(to_learn)
+    data.to_csv('data/words_to_learn.csv',index=False)
+    word_changer()
 
 
-def no_button_handler():
-    word_changer(False)
-
-
-def word_changer(flag):
-    try:
-        data = pandas.read_csv('data/words_to_learn.csv')
-        
-    except FileNotFoundError:
-        data = pandas.read_csv('data/french_words.csv')
-    if(flag):
-        to_learn_dataFame.remove(dic)
-    to_learn_dataFame = data.to_dict(orient='records')
-    global filp_card
+def word_changer():
+    #  FileNotFoundError:
+    #     data = pandas.read_csv('data/french_words.csv')
+    #     to_learn_dataFame.remove(dic)
+    global filp_card, dic
     window.after_cancel(filp_card)
-    dic = choice(to_learn_dataFame)
+    dic = choice(to_learn)
     canvas.itemconfig(title, text=f"French", fill='black')
     canvas.itemconfig(word, text=f"{dic['French']}", fill='black')
     canvas.itemconfig(main_image, image=image_front)
-    to_learn_dataFame.
     # .to_csv('word_to_learn.csv')
     # print(data[randint(1,len(data)-1)])
     filp_card = window.after(3000, card_change, dic)
@@ -71,11 +70,11 @@ yes_button.grid(row=1, column=0)
 
 no_button_image = PhotoImage(file='images\wrong.png')
 no_button = Button(image=no_button_image,
-                   highlightthickness=0, command=no_button_handler)
+                   highlightthickness=0, command=word_changer)
 no_button.grid(row=1, column=1)
 
 filp_card = window.after(3000, card_change)
-word_changer(False)
+word_changer()
 
 
 window.mainloop()
