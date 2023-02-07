@@ -16,6 +16,7 @@ def is_iss_overhead():
     data = response.json()
     iss_position = (float(data['iss_position']['latitude']),
                     float(data['iss_position']['longitude']))
+    #probably it will not work when distance becomes minus!
     if (iss_position[0]-MY_LAT <= 5 and iss_position[1]-MY_LNG <= 5):
         return True
     # print(iss_position)
