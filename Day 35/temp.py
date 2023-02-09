@@ -3,9 +3,12 @@ import requests
 api_key = "8b452bef21b1077a662cbf462269699b"
 city = "London,UK"
 
-weather_url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}"
-
-response = requests.get(weather_url)
+weather_url = f"http://api.openweathermap.org/data/2.5/weather"
+parameters={
+    "q":"London,UK",
+    "appid":api_key
+}
+response = requests.get(weather_url,params=parameters)
 data = response.json()
 print(data)
 # current_temperature = data["main"]["temp"]
