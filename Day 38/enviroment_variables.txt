@@ -1,0 +1,5 @@
+APP_ID =  510c188f 
+API_KEY =  7073afd711eb032f6d15ffb4c0095556 
+NUTRITION_URL =  https://trackapi.nutritionix.com/v2/natural/exercise 
+SHEETLY_URL =  https://api.sheety.co/26bd36fdb21d428925f0599460cdbdac/myWorkouts/workouts 
+SHEETLY_KEY=Basic cHJhdGlrOnByYXRpazEyMw==

@@ -1,7 +1,8 @@
 import requests
 import datetime as dt
-APP_ID = '510c188f'
-API_kEY = '7073afd711eb032f6d15ffb4c0095556'
+import os
+APP_ID = os.environ.get("APP_ID")
+API_kEY = os.environ.get("API_KEY")
 parameters = {
     "query": input("Tell me which excercise you did:"),
     "gender": "male",
@@ -13,12 +14,15 @@ headers = {
     "x-app-id": APP_ID,
     "x-app-key": API_kEY
 }
-url = 'https://trackapi.nutritionix.com/v2/natural/exercise'
+url = os.environ.get('NUTRITION_URL')
 response = requests.post(url, json=parameters, headers=headers)
 data = response.json()
 # print(data)
-sheety_url = 'https://api.sheety.co/26bd36fdb21d428925f0599460cdbdac/myWorkouts/workouts'
+sheety_url = os.environ.get('SHEETLY_URL')
 now = dt.datetime.now()
+headers={
+    "Authorization":os.environ.get("SHEETLY_KEY")
+}
 for excercise in data['exercises']:
     body = {
         'workout': {
@@ -29,7 +33,8 @@ for excercise in data['exercises']:
             "calories": f"{excercise['nf_calories']}",
         }
     }
+
     # requests.delete(sheety_url+'/3')
-    response = requests.post(sheety_url, json=body)
+    response = requests.post(sheety_url, json=body,headers=headers)
     print(response.text)
     # print(data)
