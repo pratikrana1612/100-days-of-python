@@ -14,11 +14,11 @@ class DataManager:
     def make_put_requests(self,sheet_data):
         for i in range(2,11):
             print(sheet_data['prices'][i-2])
-            body= {
-                'price':{
-                    'city':sheet_data['prices'][i-2]['city'],
-                    'iatacode':sheet_data['prices'][i-2]['iataCode'],
-                    'lowestPrice':sheet_data['prices'][i-2]['lowestPrice']
-                }
-            }
+            # body= {
+            #     'price':{
+            #         'city':sheet_data['prices'][i-2]['city'],
+            #         'iatacode':sheet_data['prices'][i-2]['iataCode'],
+            #         'lowestPrice':sheet_data['prices'][i-2]['lowestPrice']
+            #     }
+            # }
             requests.put(self.url+f'/{i}',json=body,headers=self.headers)
