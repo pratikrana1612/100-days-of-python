@@ -12,13 +12,12 @@ class DataManager:
         return response.json()
 
     def make_put_requests(self,sheet_data):
-        for i in range(2,11):
-            print(sheet_data['prices'][i-2])
-            # body= {
-            #     'price':{
-            #         'city':sheet_data['prices'][i-2]['city'],
-            #         'iatacode':sheet_data['prices'][i-2]['iataCode'],
-            #         'lowestPrice':sheet_data['prices'][i-2]['lowestPrice']
-            #     }
-            # }
-            requests.put(self.url+f'/{i}',json=body,headers=self.headers)
+        for city in sheet_data:
+            print(city)
+            body=  {
+                "price": {
+                    "iataCode": city["iataCode"]
+                }
+            }
+            response=requests.put(f"{self.url}/{city['id']}",json=body,headers=self.headers)
+            print(response.text)
