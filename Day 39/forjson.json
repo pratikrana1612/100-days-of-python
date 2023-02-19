@@ -1,0 +1,210 @@
+{
+      "_results": 1,
+      "all_stopover_airports": [],
+      "currency": "GBP",
+      "data": [
+            {
+                  "airlines": [
+                        "W9"
+                  ],
+                  "availability": {
+                        "seats": 2
+                  },
+                  "baglimit": {
+                        "hand_height": 40,
+                        "hand_length": 55,
+                        "hand_weight": 10,
+                        "hand_width": 23,
+                        "hold_dimensions_sum": 439,
+                        "hold_height": 149,
+                        "hold_length": 171,
+                        "hold_weight": 20,
+                        "hold_width": 119,
+                        "personal_item_height": 30,
+                        "personal_item_length": 40,
+                        "personal_item_weight": 10,
+                        "personal_item_width": 20
+                  },
+                  "bags_price": {
+                        "1": 84.21,
+                        "2": 168.405
+                  },
+                  "booking_token": "EVl69r41Vj_UAxe7q_3I5T0_5DDwBFMVORVMJMfdJp2ANNl0C8zUH4dYWdnieZzIUfpO6uJJ1owMU5FET5EY1llDV0gqCsOoPRExFTNaXQWjDMAjOg8Pp0mM05jCFcB0uDzMd_a9jmA_HQF-ObwIkvday8sGmBn567m0ArIbBOK7HF3XOHM9nuOpfzf7z35LyMu21U8jvrD-qLI_XoWN2jdihFmC2TjY-TQ5ILvBmZNgXgU9X-7gzq4h8eQ8lvyGljsO1ZNeztKttEdJnh-jp-UE7XtrAtLtGfcVOoxChPDwqhnOKY_cXWzefeJXWRIgQSaAM3id_j5vyHJ3RK_8KE-EW31wrIeMphqBENarYYHCPL7vjwM4nK_pmwrPE2VdTqLw5SZ5lMaiPZLg_WgOYUYZbyo45o1QDFMzKpPXQjrDrVu40a7mIsaR1GAHXiT411T0zUOvgckOWPqzpHgWqmcyX93qMrM6frTioeNemZpZ0bQDTtJcS6aqpSnRQF_gw_BHItz22YMes0BWBsx7otCxbJMIP9nVcrBeo1iIro7BDbCiy57gbQs4XFSDDddTcIpjYkmjsYPn7ONUBs9dsq0EL4mYDo6EJMo8chS0ZiiaIiXbgDBBlJ6KDocAEZavvaNwQu_WNSByhsllNJ6KQp5jaMwPDSXpZdoADou_B6Kxa8esz2UYg0vmM759ZLdnlnxKhHqYjrPioV133VOh5PQ==",
+                  "cityCodeFrom": "LON",
+                  "cityCodeTo": "IST",
+                  "cityFrom": "London",
+                  "cityTo": "Istanbul",
+                  "conversion": {
+                        "EUR": 61.813102,
+                        "GBP": 55
+                  },
+                  "countryFrom": {
+                        "code": "GB",
+                        "name": "United Kingdom"
+                  },
+                  "countryTo": {
+                        "code": "TR",
+                        "name": "Turkey"
+                  },
+                  "deep_link": "https: //www.kiwi.com/deep?affilid=pratikfilghtsearch&currency=GBP&flightsId=18ff170f4c1f000047f46857_0%7C170f18ff4c26000037441e7c_0&from=LTN&lang=en&passengers=1&to=IST&booking_token=E1g5QPhcnJmOhu3ydDuoY2OlG6TctnSS6m3FbHgPDnBR8PvnDQLSj3sZYFt-3JKF9Ntxb-0ni5wBKBP72FMiYX-KRghGLGZdd2kGfezCr5j4cGEhzbCIoknfvmkDHdqY4IrquR0z-pFf-5ZpM2cGQvITGSQlwupTGODO-46xTE-KviPAS8FzPlHhCSjBga51GWH9FX4AejSd3fZRJW4bVDoVD-rX930nB4hXbsMsXlqWYmG4heLQbtGOqd2pStWswNAEhQhxZYWuf_b37_nYDnC3vld-5e8JNjCthmKOqRISih-9PKcXb8m30BZn75_sOu8GXYZo_0eudd7knFzvgCdd2U8mb4FdLI0d-w9OVQRzJXEeKmFiL-dPrMShVXqKKfQia9hrNoo3UDnm2yavSGKkoo27nkXt2WbLWKTVA-5_pYFZ1YarYvbgELPBLqjf7QI9ux4V6vienNekJ8kksGP_d7H1ItmWDapR50NnDXK4wac9Rjow4VhZHcqd-Ogz9DzZ6GiFo2OBEJv2lMWKJ2PJEnGgHRDjAzgBz7mHGqc4rdAEukuBATrieb6aeOxoJ1c1cO_E_QRWiPZ9Z5fp84g==",
+                  "distance": 2497.81,
+                  "duration": {
+                        "departure": 13500,
+                        "return": 14100,
+                        "total": 27600
+                  },
+                  "facilitated_booking_available": "False",
+                  "fare": {
+                        "adults": 55,
+                        "children": 55,
+                        "infants": 55
+                  },
+                  "flyFrom": "LTN",
+                  "flyTo": "IST",
+                  "has_airport_change": "False",
+                  "hidden_city_ticketing": "False",
+                  "id": "18ff170f4c1f000047f46857_0|170f18ff4c26000037441e7c_0",
+                  "local_arrival": "2023-05-10T12: 40: 00.000Z",
+                  "local_departure": "2023-05-10T06: 55: 00.000Z",
+                  "nightsInDest": 7,
+                  "pnr_count": 2,
+                  "price": 55,
+                  "quality": 147.146222,
+                  "route": [
+                        {
+                              "airline": "W9",
+                              "bags_recheck_required": "False",
+                              "cityCodeFrom": "LON",
+                              "cityCodeTo": "IST",
+                              "cityFrom": "London",
+                              "cityTo": "Istanbul",
+                              "combination_id": "18ff170f4c1f000047f46857",
+                              "equipment": "None",
+                              "fare_basis": "RREG",
+                              "fare_category": "M",
+                              "fare_classes": "R",
+                              "fare_family": ,
+                              "flight_no": 4499,
+                              "flyFrom": "LTN",
+                              "flyTo": "IST",
+                              "guarantee": "False",
+                              "id": "18ff170f4c1f000047f46857_0",
+                              "local_arrival": "2023-05-10T12: 40: 00.000Z",
+                              "local_departure": "2023-05-10T06: 55: 00.000Z",
+                              "operating_carrier": ,
+                              "operating_flight_no": ,
+                              "return": 0,
+                              "utc_arrival": "2023-05-10T09: 40: 00.000Z",
+                              "utc_departure": "2023-05-10T05: 55: 00.000Z",
+                              "vehicle_type": "aircraft",
+                              "vi_connection": "False"
+                        },
+                        {
+                              "airline": "W9",
+                              "bags_recheck_required": "False",
+                              "cityCodeFrom": "IST",
+                              "cityCodeTo": "LON",
+                              "cityFrom": "Istanbul",
+                              "cityTo": "London",
+                              "combination_id": "170f18ff4c26000037441e7c",
+                              "equipment": "None",
+                              "fare_basis": "RREG",
+                              "fare_category": "M",
+                              "fare_classes": "R",
+                              "fare_family": ,
+                              "flight_no": 4500,
+                              "flyFrom": "IST",
+                              "flyTo": "LTN",
+                              "guarantee": "False",
+                              "id": "170f18ff4c26000037441e7c_0",
+                              "local_arrival": "2023-05-17T15: 10: 00.000Z",
+                              "local_departure": "2023-05-17T13: 15: 00.000Z",
+                              "operating_carrier": ,
+                              "operating_flight_no": ,
+                              "return": 1,
+                              "utc_arrival": "2023-05-17T14: 10: 00.000Z",
+                              "utc_departure": "2023-05-17T10: 15: 00.000Z",
+                              "vehicle_type": "aircraft",
+                              "vi_connection": "False"
+                        }
+                  ],
+                  "technical_stops": 0,
+                  "throw_away_ticketing": "False",
+                  "utc_arrival": "2023-05-10T09: 40: 00.000Z",
+                  "utc_departure": "2023-05-10T05: 55: 00.000Z",
+                  "virtual_interlining": "False"
+            }
+      ],
+      "fx_rate": 0.889779,
+      "search_id": "219fbee2-142c-5926-f3d3-27ac4446da27",
+      "search_params": {
+            "flyFrom_type": "airport",
+            "seats": {
+                  "adults": 1,
+                  "children": 0,
+                  "infants": 0,
+                  "passengers": 1
+            },
+            "to_type": "airport"
+      },
+      "sort_version": 0
+}
+
+{
+      "prices": [
+            {
+                  "city": "Paris",
+                  "iataCode": "PAR",
+                  "id": 2,
+                  "lowestPrice": 54
+            },
+            {
+                  "city": "Berlin",
+                  "iataCode": "BER",
+                  "id": 3,
+                  "lowestPrice": 42
+            },
+            {
+                  "city": "Tokyo",
+                  "iataCode": "TYO",
+                  "id": 4,
+                  "lowestPrice": 485
+            },
+            {
+                  "city": "Sydney",
+                  "iataCode": "SYD",
+                  "id": 5,
+                  "lowestPrice": 551
+            },
+            {
+                  "city": "Istanbul",
+                  "iataCode": "IST",
+                  "id": 6,
+                  "lowestPrice": 95
+            },
+            {
+                  "city": "Kuala Lumpur",
+                  "iataCode": "KUL",
+                  "id": 7,
+                  "lowestPrice": 414
+            },
+            {
+                  "city": "New York",
+                  "iataCode": "NYC",
+                  "id": 8,
+                  "lowestPrice": 240
+            },
+            {
+                  "city": "San Francisco",
+                  "iataCode": "SFO",
+                  "id": 9,
+                  "lowestPrice": 260
+            },
+            {
+                  "city": "Cape Town",
+                  "iataCode": "CPT",
+                  "id": 10,
+                  "lowestPrice": 378
+            }
+      ]
+}
