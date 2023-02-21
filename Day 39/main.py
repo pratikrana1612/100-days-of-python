@@ -10,7 +10,7 @@ from notification_manager import NotificationManager
 flight_search = FlightSearch()
 data = DataManager()
 sheet_data = data.make_get_requests()
-# pprint(sheet_data)
+pprint(sheet_data)
 
 # if iata code is empty then full fill it
 if (sheet_data['prices'][0]['iataCode'] == ''):

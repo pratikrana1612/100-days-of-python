@@ -21,3 +21,15 @@ class DataManager:
             }
             response=requests.put(f"{self.url}/{city['id']}",json=body,headers=self.headers)
             print(response.text)
+
+    def put_users(self,FirstName,LastName,Email):
+        body={
+        "user":{
+            "firstName":FirstName,
+            "lastName":LastName,
+            "email":Email
+        }
+        }
+        response=requests.get('https://api.sheety.co/26bd36fdb21d428925f0599460cdbdac/flightDeals/users',headers=self.headers)
+        # response=requests.post('https://api.sheety.co/26bd36fdb21d428925f0599460cdbdac/flightDeals/users',json=body,headers=self.headers)
+        print(response.json())
